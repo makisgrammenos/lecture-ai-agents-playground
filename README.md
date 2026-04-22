@@ -1,4 +1,4 @@
-# Εφαρμογές Τεχνητής Νοημοσύνης — Κώδικας μαθήματος
+# Εφαρμογές Τεχνητής Νοημοσύνης -  Κώδικας μαθήματος
 
 Ο κώδικας του μαθήματος χωρίζεται σε τρεις φακέλους: inference με γλωσσικά μοντέλα, άντληση άρθρων από arXiv, και ένα πλήρες RAG pipeline.
 
@@ -21,7 +21,6 @@
 └── requirements.txt
 ```
 
----
 
 ## LLM_inference
 
@@ -39,13 +38,12 @@ python LLM_inference/chat_cli/chat.py --temperature 0.7
 
 **`pubmed_API/search.py`** — Script που κάνει αναζήτηση στο PubMed (NCBI E-utilities API) και επιστρέφει τίτλους και abstracts για μια θεματική.
 
----
 
 ## arxivx
 
 **`fetch_papers.ipynb`** — Κατεβάζει άρθρα από το arXiv με βάση ένα query (π.χ. `abs:"spiking neural network" AND cat:cs.CL`). Για κάθε άρθρο κατεβάζει το PDF, εξάγει το κείμενο με PyMuPDF και αποθηκεύει `.txt` + `.json` με τα metadata. Στο τέλος φτιάχνει ένα `catalog.json` που το διαβάζει το RAG notebook.
 
----
+
 
 ## RAG_demo
 
@@ -53,7 +51,7 @@ python LLM_inference/chat_cli/chat.py --temperature 0.7
 
 Περιλαμβάνει επίσης οπτικοποίηση των embeddings σε 2D με t-SNE, και σύγκριση RAG vs no-RAG στην ίδια ερώτηση.
 
----
+
 
 ## Εγκατάσταση
 
@@ -85,7 +83,10 @@ ollama pull qwen2.5:3b
 ollama pull llama3.2:3b
 ```
 
----
+
+## Απορίες
+
+Για απορίες μπορείτε να στείλετε e-mail στο grammenos@ionio.gr 
 
 ## Βιβλιοθήκες
 
